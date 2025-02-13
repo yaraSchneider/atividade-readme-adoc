@@ -102,7 +102,7 @@ Quer contribuir para o projeto? Siga os passos:
 5. Abra um **Pull Request** no repositório original.
 
 ## 📄 Licença
-Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença **MIT**. Consulte o arquivo LICENSE para mais detalhes.
 
 ## ✉️ Contato
 Se precisar de mais informações ou tiver sugestões, entre em contato:
