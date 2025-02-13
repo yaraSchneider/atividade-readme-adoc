@@ -1,0 +1,112 @@
+# 📚 Sistema de Gerenciamento de Biblioteca
+
+## 🎯 Sobre o Projeto
+O **Sistema de Gerenciamento de Biblioteca** foi desenvolvido para facilitar o processo de empréstimo, devolução e administração de livros em uma biblioteca. Com essa aplicação, é possível gerenciar empréstimos, verificar a disponibilidade de exemplares, cadastrar usuários e gerar relatórios de atividades. O objetivo é proporcionar uma experiência eficiente e otimizar a gestão da biblioteca.
+
+## 🚀 Recursos
+O sistema oferece diversas funcionalidades para melhorar a administração da biblioteca:
+
+- 📖 **Cadastro e gerenciamento de livros** com informações detalhadas (título, autor, ISBN, etc.).
+- 🔄 **Criação e modificação de empréstimos** de livros, incluindo data de empréstimo e devolução.
+- 👀 **Visualização da disponibilidade dos livros** em tempo real.
+- 📊 **Geração de relatórios** de empréstimos, devoluções e multas.
+- 🔔 **Notificação de usuários** sobre prazos de empréstimos e devoluções.
+- 🔐 **Sistema de login e autenticação** para administradores e usuários.
+
+## 📦 Tecnologias Utilizadas
+
+### 🖥️ Frontend
+- **Angular**: Utilizado para criar uma interface de usuário interativa e responsiva.
+
+### 🔧 Backend
+- **Spring Boot (Java)**: Gerencia os empréstimos, livros e usuários através da API.
+
+### 🗄️ Banco de Dados
+- **MySQL**: Banco de dados relacional para armazenar informações sobre livros, usuários e empréstimos.
+
+### 🔐 Autenticação
+- **JWT (JSON Web Tokens)**: Segurança no processo de autenticação e autorização de usuários.
+
+## 🎮 Como Executar
+
+### 1️⃣ Clone o Repositório
+Clone o repositório para sua máquina local com o comando:
+```sh
+git clone https://github.com/usuario/sistema-biblioteca.git
+```
+
+### 2️⃣ Instale as Dependências do Frontend
+```sh
+cd sistema-biblioteca/frontend
+npm install
+```
+
+### 3️⃣ Instale as Dependências do Backend
+```sh
+cd sistema-biblioteca/backend
+mvn install
+```
+
+### 4️⃣ Configuração do Banco de Dados
+Crie um banco de dados MySQL e configure as credenciais no arquivo `application.properties` do backend:
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/biblioteca
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+```
+Em seguida, execute as migrações para criar as tabelas necessárias.
+
+### 5️⃣ Inicie o Servidor Backend
+```sh
+mvn spring-boot:run
+```
+
+### 6️⃣ Inicie o Servidor Frontend
+```sh
+ng serve
+```
+
+### 7️⃣ Acesse a Aplicação
+Abra o navegador e acesse:  
+🔗 `http://localhost:4200`
+
+## 📚 Documentação da API
+A API foi documentada com **Swagger**, permitindo a visualização interativa dos endpoints.
+
+### 🌍 Endpoints Principais
+- 📌 `GET /api/books` - Retorna todos os livros disponíveis.
+- 📌 `POST /api/loans` - Cria um novo empréstimo.
+- 📌 `GET /api/loans/{id}` - Obtém detalhes de um empréstimo.
+- 📌 `PUT /api/loans/{id}` - Atualiza informações de um empréstimo.
+- 📌 `DELETE /api/loans/{id}` - Cancela um empréstimo.
+
+Para acessar a documentação completa, inicie o backend e acesse:  
+🔗 `http://localhost:8080/swagger-ui.html`
+
+## 🤝 Contribuindo
+Quer contribuir para o projeto? Siga os passos:
+
+1. Faça um **fork** do repositório.
+2. Crie uma branch com a nova feature:  
+   ```sh
+   git checkout -b feature-nome-da-feature
+   ```
+3. Realize as alterações e faça commit:  
+   ```sh
+   git commit -m 'Adiciona nova feature'
+   ```
+4. Envie para o repositório remoto:  
+   ```sh
+   git push origin feature-nome-da-feature
+   ```
+5. Abra um **Pull Request** no repositório original.
+
+## 📄 Licença
+Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## ✉️ Contato
+Se precisar de mais informações ou tiver sugestões, entre em contato:
+
+- 📧 **Email**: contato@biblioteca.com  
+- 📞 **Telefone**: +55 11 98765-4321
+
